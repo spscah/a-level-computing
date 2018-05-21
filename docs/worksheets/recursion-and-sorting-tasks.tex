@@ -1,0 +1,89 @@
+\documentclass[a4paper]{article}
+
+\input{../JuniorComputing/pagesettings}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{sharpc}{language=[Sharp]C, frame=lr, rulecolor=\color{blue!80!black}}
+
+
+\def\papertitle{Recursion}
+\def\attribution{\texttt{cah@stpaulsschool.org.uk} \\ SPS Computing} 
+
+
+\newcommand{\cut}[1]{}
+\newcommand{\ans}[1]{\\ \hspace*{\fill}\framebox {#1} }
+
+%\renewcommand{\ans}[1]{} 
+%Uncomment the line above to remove answers.
+
+\title{\papertitle}
+
+\date{\today}
+
+\begin{document}
+
+\pagestyle{fancy}
+\fancyfoot{}
+\fancyhead{}
+\fancyfoot[R]{\thepage}
+\fancyfoot[C]{\papertitle}
+\fancyhead[L]{\attribution}
+
+\fancyhead[R]{\raisebox{-0.8cm}{ \includegraphics[height=2cm]{../JuniorComputing/SPSLogo.jpg}}}
+%Uncomment the line above to include the school logo top right.
+
+\maketitle
+
+\begin{enumerate}
+
+	\item Write a function that performs a binary search on a list of data to determine if a given item is present in the list. 
+
+	Bonus: write it is an generic extension method, e.g.  
+
+	\lstset{style=sharpc}
+\begin{lstlisting}
+public static class ListMethods {
+    public static T BinarySearch<T>(this IList<T> li, T item){
+        return item;
+    }
+
+}
+\end{lstlisting}
+
+	\item Write a function that will take two unsorted lists (you can assume that there are no duplicated values in each list) and return the intersection of the two lists, i.e. you should be checking for duplicates. Your function should look something like this: 	
+
+\lstset{style=sharpc}
+\begin{lstlisting}
+public static class ListMethods {
+    public static IList<T> Intersection<T>(IList<T> l1, IList<T> l2){
+        return null;
+    }
+
+}
+\end{lstlisting}
+
+
+	\item The Towers of Hanoi (\url{https://www.mathsisfun.com/games/towerofhanoi.html}, \url{https://en.wikipedia.org/wiki/Tower_of_Hanoi}) involve having a pile of disks of different sizes, such that no disk can be piled on top of a smaller disk. You are only allowed to pick up one disk at a time. You have space for three piles. Your challenge is to move the pile of disks from one pile to the third pile.  
+
+	This is a 'classic' recursive problem. 
+
+	Develop a program that will: 
+	\begin{enumerate}
+		\item encode the problem for an arbitrary number of disks 
+		\item solve using a recursive function 
+		\item solve using an alternative iterative solution. 
+	\end{enumerate}
+
+	\item \label{itm:sort} Using the wikipedia page \url{https://en.wikipedia.org/wiki/Sorting_algorithm}, pick one and implement it in C\# to sort lists of integers. (Try not to just copy )
+
+	Create some lists (\texttt{List<int>}) of random integers (hint: use the \texttt{Random} class) to test your implementation. 
+
+	Using the \texttt{Stopwatch} class, investigate the effects of the length of the list on the time taken to sort the list. Compare with the built in sort function. 
+
+
+\end{enumerate}
+
+\end{document}
+
+

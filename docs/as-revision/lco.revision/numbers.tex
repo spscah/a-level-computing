@@ -1,0 +1,78 @@
+\section{Binary, Hex, Numbers} % (fold)
+\label{sec:binary_hex_numbers}
+
+
+\begin{questions}
+	\question Explain how you would turn a positive value into a two's complement number storing its negative equivalent. Use the denary values 34 and -34 and 8 bit binary values as an example.  
+	\begin{solution}
+		Flip the bits and add one
+	\end{solution}
+		
+	\question The binary bit pattern \texttt{11000010} \ldots 
+	\begin{parts}
+		\part What is the value of this number if it is an \emph{unsigned binary integer}? \begin{solution}$194$\end{solution}
+		\part What is the value of this number if it is an \emph{unsigned binary fixed point number} with 4 bits before and 4 bits after the binary point?\begin{solution}$12 \frac{1}{8}$\end{solution}
+		\part What is the hex equivalent of this value? \begin{solution}$C2$\end{solution}
+		\part What is the denary equivalent of this value if it represents a \emph{two's complement binary integer}? \begin{solution}$-62$\end{solution}
+		\part If this number has passed parity, what style of parity is being used? \begin{solution}odd parity\end{solution}
+		\part What character is being represented by this number if it represents a 7-bit ASCII code with the most significant bit being used as the parity bit? \begin{solution}$42 \rightarrow 'b'$\end{solution}
+	\end{parts}
+
+	\question Represent the following denary numbers in binary using 8 bits:
+	\begin{parts}
+		\part 234 \begin{solution}$11101000$\end{solution}
+		\part 197 \begin{solution}$11000101$\end{solution}
+		\part 57  \begin{solution}$00111001$\end{solution}
+	\end{parts}
+
+	\question How many denary values can be represented using 16 bits? \begin{solution}$2^{16} = 65536$\end{solution}
+
+	\question What is the hexadecimal equivalent of the following denary numbers:
+	\begin{parts}
+		\part 289 \begin{solution}$121$\end{solution}
+		\part 154 \begin{solution}$9A$\end{solution}
+		\part 57005 \begin{solution}$DEAD$\end{solution} 
+	\end{parts}
+
+
+	\question Showing your working, multiply the binary value \texttt{1101} by \texttt{101}. 
+
+
+	\question Convert the following decimal numbers to fixed point binary: 
+	\begin{parts}
+		\part 0.625
+		\part 0.3 
+		\part 0.734375
+	\end{parts}
+
+	\question Define the terms mantissa and exponent and their role in converting a binary floating point number into denary. 
+
+	\question Convert the following decimal numbers to 8 bit two's complement, fixed point binary in which 3 bits are allocated for the fractional part: 
+	\begin{parts}
+		\part -1.75
+		\part -6.5
+		\part -14.125
+
+	\end{parts}
+
+	\question What is the maximum and minimum value --- in both binary and denary --- which can be stored in 8 bit signed, fixed point binary numbers in which 3 bits are allocated for the fractional part? 
+
+	\question Convert the following floating point binary numbers which store the mantissa in 4 bits in two's complement form and the exponent in 4 bits, two's complement form, into denary. The binary point is between the most significant bit and the next ost significant bit of the mantissa. 
+	\begin{parts}
+		\part 01100101
+		\part 10010100
+		\part 01001001
+		\part 01111101 
+	\end{parts}
+	\question What does it mean for a fixed point binary number (e.g. a mantissa in an exponent) to be normalised? 
+
+	\question Explain the terms underflow and overflow when used with floating points numbers. 
+
+	\question With a suitable example, explain the difference between absolute and relative errors with floating point representation. 
+
+	
+
+
+\end{questions}
+
+% section binary_hex_numbers (end)

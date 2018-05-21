@@ -1,0 +1,65 @@
+\documentclass[a4paper]{exam}
+
+% For the general maths stuff 
+\usepackage{amsmath}
+% For the graph drawing  
+\usepackage{tikz}
+% For the logic gates
+\usetikzlibrary{arrows,shapes.gates.logic.US,shapes.gates.logic.IEC,calc}
+\usepackage{circuitikz}
+% For the pseudocode
+\usepackage{algpseudocode}
+
+% This line will remove the border around the solutions. 
+\unframedsolutions
+% Comment out this line to hide the solutions 
+%\printanswers
+
+\def\papertitle{LCO Summer Revision Questions}
+\def\attribution{\texttt{cah@stpaulsschool.org.uk} \\ SPS Computing} 
+
+\pagestyle{headandfoot}
+\runningfooter{\papertitle}{}{\thepage}
+
+\title{\papertitle}
+
+\date{May 2018}
+
+\begin{document}
+
+
+\maketitle
+\tableofcontents
+
+\pagebreak
+\input{topics/lco-summer}        
+
+\pagebreak
+\input{lco.revision/numbers}        
+
+\pagebreak
+\input{lco.revision/information-coding}        
+
+\pagebreak
+\input{lco.revision/compression-encryption}        
+
+\pagebreak
+\input{lco.revision/hw-sw-os}
+
+\pagebreak
+\input{lco.revision/logic}
+
+\pagebreak
+\input{lco.revision/internal}
+
+\pagebreak
+\section{Input/Output}
+\section{Communication}
+\section{Networking}
+
+\pagebreak
+\input{lco.revision/discrete-maths}
+
+\end{document}
+
+

@@ -1,0 +1,81 @@
+\section{Boolean Logic and Logic Gates}
+
+\begin{questions}
+	\question Enumerate the 6 logic gates you are expected to know. How would they be expressed in symbols? 
+	\question Quote the two forms of De Morgan's Laws. 
+	\question Complete the following identities:
+	\begin{parts}
+		\part $A\cdot0\equiv$
+		\part $A+1\equiv$
+		\part $A+0\equiv$
+		\part $A\cdot1\equiv$
+		\part $A\cdot\overline{A}\equiv$
+		\part $\overline{\overline{A}}\equiv$
+		\part $A\cdot A\equiv$
+		\part $A\cdot (B + C)\equiv$
+	\end{parts}
+
+	\question Draw the truth table and circuit for the Boolean statement.  
+			 $\overline{B} + ( \overline{\overline{A} \cdot \overline{B}} )$  
+	\question Can you simplify the previous statement? 
+	\question Simplify $(A+B)\cdot C \cdot \overline{C} + (A+ \overline{A}) \cdot B$ \begin{solution}$B$\end{solution} 
+	\question Simplify $\overline{A+\overline{A} \cdot \overline{B}}$ \begin{solution}$\overline{A}\cdot B$\end{solution}
+	\question Draw the circuit and truth table for the statement $Q = (A+B)\oplus \overline{C}$	
+	\question Give Boolean statements for the following circuit diagrams:
+
+	\begin{parts}
+		\part
+		
+			\begin{circuitikz} \draw
+				(0,2) node[nand port] (nand1) {}
+				(1,0) node[not port] (not1) {}
+				(4,1) node[xor port] (xor1) {}
+
+				(nand1.in 1) node[above left=.5cm](a) {A}
+				(nand1.in 2) node[below left = .5cm](b) {B}
+				(nand1.out) -| (xor1.in 1)
+				(not1.out) -| (xor1.in 2)
+				(xor1.out) node[right=.5cm](x) {X}
+
+				(a) -| (nand1.in 1)
+				(b) -| (nand1.in 2)
+				(b) node[below=1cm](c){C}
+				(c) -| (not1.in)
+				;
+			\end{circuitikz}
+
+		\part
+
+			\begin{circuitikz} \draw
+				(0,2) node[xor port] (myand) {}
+				(4,0) node[and port] (myor) {}
+				(1,1) node[not port] (mynot) {}
+				(6,1) node[or port] (myxor) {}
+				(myand.in 1) node[above left=.5cm](a) {A}
+				(myand.in 2) node[below left = .5cm](b) {B}
+				(myand.out) -| (myxor.in 1)
+				(mynot.out) -| (myor.in 1)
+				(myor.out) -| (myxor.in 2)
+				(myxor.out) node[right=.5cm](x) {X}
+
+				(b) -| (mynot.in)
+				(a) -| (myand.in 1)
+				(b) -| (myand.in 2)
+				(b) node[below=1cm](c){C}
+				(c) -| (myor.in 2);
+			\end{circuitikz}
+	\end{parts}
+	\question 
+	\begin{parts}	
+		\part Draw a half adder.
+		\part Explain --- with the aid of truth tables --- how to combine half adders together into a full adder. 
+	\end{parts}
+	\question Draw a logic diagram, using only NAND operations, for 
+	\begin{parts}
+		\part $ A + B$
+		\part $ A \cdot B$
+		\part $ A \oplus B$
+	\end{parts}
+
+
+\end{questions}

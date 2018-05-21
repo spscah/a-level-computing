@@ -1,0 +1,33 @@
+\section{Internal Computer Architecture}
+
+\begin{questions}
+	\question System bus facts: 
+	\begin{parts}
+		\part How are the number of wires on the bus better known? What is a common value for this quantity? 
+		\part What are the names for the three busses? 
+		\part What direction will the data travel down these three busses? 
+	\end{parts}
+	\question How much address space is directly addressable by a 32-bit address bus? 
+	\question Within the context of main memory, define volatile. 
+	\question What does RAM stand for; explain the importance of R in this acronym. 
+	\question Contrast the von Neumann and Harvard architectures.
+	\question Give two reasons why I/O devices are handled by controllers rather than being connected directly to the processor. \begin{solution}Format. Speed. Monitoring new connections. \end{solution}  
+	\question Explain why we would need ROM, RAM, a SSD and, potentially, a magnetic HDD within the same PC.
+	\question On a games console, why might it take a minute to load a game?   
+	\question Explain what is meant by the \emph{Stored Program Concept}. 
+	\question Give a pro and a con for programs and data being considered as the same thing in memory. 
+	\question What is meant by the clock speed? 
+	\question Explain what purposes are served by the CIR, PC, MBR, MAR, SR in the fetch execute cycle. 
+	\question What are the operands and the opcodes? 
+	\question What are the two addressing modes? 
+	\question What might cause an interrupt to be fired? 
+	\question Describe the effect of an ISR on the fetch execute cycle. 
+	\question Write assembly language instructions that would perform the following pseudocode, use registers $r_1$ to $r_n$ as necessary to store variables:
+	\begin{algorithmic}
+	\If{$A = 1$} 
+		\State $B \gets 2$ 
+	\Else 
+		\State $A \gets A + 1$ 
+	\EndIf
+	\end{algorithmic}
+\end{questions}
