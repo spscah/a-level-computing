@@ -1,14 +1,9 @@
 # Documents
 
-## JuniorComputing 
+## as-revision 
 
-Documents related to the (Cambridge) IGCSE course. 
+Assistance with preparation for the L8 summer exam.  
 
-## SeniorComputing
+## worksheets
 
-Documents related to the (AQA) A Level course. 
-
-## Maths
-
-Documents related to aspects of the OCR Maths A Level. 
-
+Various source code files for ongoing work. 
