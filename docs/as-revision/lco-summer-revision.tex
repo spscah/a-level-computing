@@ -18,6 +18,20 @@
 \def\papertitle{LCO Summer Revision Questions}
 \def\attribution{\texttt{cah@stpaulsschool.org.uk} \\ SPS Computing} 
 
+\def\srcfiles{
+topics/lco-summer,
+lco.revision/numbers, 
+lco.revision/information-coding,
+lco.revision/compression-encryption,
+lco.revision/hw-sw-os,
+lco.revision/logic,
+lco.revision/internal,
+lco.revision/io,
+lco.revision/comms,
+lco.revision/networking,
+lco.revision/discrete-maths
+}
+
 \pagestyle{headandfoot}
 \runningfooter{\papertitle}{}{\thepage}
 
@@ -31,34 +45,11 @@
 \maketitle
 \tableofcontents
 
-\pagebreak
-\input{topics/lco-summer}        
-
-\pagebreak
-\input{lco.revision/numbers}        
-
-\pagebreak
-\input{lco.revision/information-coding}        
-
-\pagebreak
-\input{lco.revision/compression-encryption}        
-
-\pagebreak
-\input{lco.revision/hw-sw-os}
-
-\pagebreak
-\input{lco.revision/logic}
-
-\pagebreak
-\input{lco.revision/internal}
-
-\pagebreak
-\section{Input/Output}
-\section{Communication}
-\section{Networking}
-
-\pagebreak
-\input{lco.revision/discrete-maths}
+\foreach \fn in \srcfiles
+{
+   \pagebreak
+   \input{\fn}
+}
 
 \end{document}
 
